@@ -1,12 +1,3 @@
-def read_5_numbers():
-    array = [int] * 5
-    for i in range(len(array)):
-        number = int(input("Digite um número: "))
-        array[i] = number
-
-    return array
-
-
 def vetor_soma(vetor):
     soma = 0
     for i in range(len(vetor)):
@@ -21,7 +12,12 @@ def vetor_multi(vetor):
     return multi
 
 
-array = read_5_numbers()
+array = [int] * 5
+for i in range(len(array)):
+    number = int(input("Digite um número: "))
+    array[i] = number
+
+
 print(f"Soma de todos os valores do vetor é: {vetor_soma(array)}")
 print(f'A multiplicação dos valores do vetor é {vetor_multi(array)}')
 print(f"O vetor é {array}")

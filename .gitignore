@@ -1,1 +1,6 @@
-*/tests
+tests/
+__pycache__
+__init__.py
+.gitignore
+.pytest_cache/
+

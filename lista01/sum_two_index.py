@@ -14,7 +14,13 @@ def sum_two_index(array, x, y):
         raise IndexError
 
 
-array = read_8_numbers()
+
+array = [int] * 10
+for i in range(8):
+    number = int(input("Digite um número: "))
+    array[i] = number
+
+
 x = int(input("Digite a posição X: "))
 y = int(input("Digite a posição Y: "))
 print(sum_two_index(array, x, y ))
