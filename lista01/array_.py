@@ -1,12 +1,13 @@
 def array_invert(array):
-    array_invert = [int] * 6
-    desc = 5
+    length = len(array) - 1
     i = 0
-    while desc >= 0:
-        array_invert[i] = array[desc]
-        desc -=1
+    array_y = [int] * len(array)
+    while length >= 0:
+        array_y[i] = array[length]
+        length -= 1
         i += 1
-    return array_invert
+    return array_y
+        
 
 
 def array_sum(array):
